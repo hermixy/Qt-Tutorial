@@ -101,7 +101,7 @@ void MainWindow::on_listWidget_customContextMenuRequested(const QPoint &pos)
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529762-2abe6ecc-2cbc-4f56-9918-7970816458b9.png)
+![](/image/1379525-20211129100804773-1067625167.gif)
 
 ListWidget同样支持一图标方式显示列表框内的元素，只需要设置`setViewMode(QListView::IconMode)`属性即可实现图标显示，我们按照如上代码简单改进即可，代码如下:
 ```C
@@ -219,4 +219,4 @@ void MainWindow::on_listWidget_2_customContextMenuRequested(const QPoint &pos)
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529791-790f88d1-9706-4352-9eba-06c073ec0c30.png)
+![](/image/1379525-20211129135620032-1222914753.gif)
