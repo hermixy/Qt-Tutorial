@@ -103,8 +103,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 代码运行效果如下:
 
-![Uploading image.png…]()
-
+![image](https://user-images.githubusercontent.com/52789403/188529658-e2d2ec2c-5631-4288-8849-8f9c78136c7b.png)
 
 上方代码中我们多数都是在使用`View`视图组件，接下来将具体分析`Widget`组件的使用细节，View组件与Widget组件看似一致，但却存在本质区别，其大致区别如下:
 
@@ -148,21 +147,7 @@ void MainWindow::on_pushButton_clicked()
 
 代码运行效果如下:
 
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-![Uploading image.png…]()
-
-
+![image](https://user-images.githubusercontent.com/52789403/188529676-f3e325eb-3d0e-406c-b91d-8d091f4dba94.png)
 
 <br>
 
