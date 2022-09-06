@@ -2,7 +2,7 @@
 
 首先在Qt的Ui编辑界面左侧加入`TreeWidget`组件，右侧加入`TabWidget`组件，将页面中的`TabWidget`组件增加指定页，效果如下。
 
-![image](https://user-images.githubusercontent.com/52789403/188529923-4c33deb9-758e-4d2a-b19b-c24ed7e7bbed.png)
+![](/image/1379525-20211130133959641-1504048519.png)
 
 在`MainWindow::MainWindow`主函数中我们对其中的两个组件进行初始化操作。
 ```C
@@ -80,4 +80,4 @@ void MainWindow::on_treeWidget_itemDoubleClicked(QTreeWidgetItem *item, int colu
 
 代码实现起来很简单，具体实现效果如下所示:
 
-![image](https://user-images.githubusercontent.com/52789403/188529948-237f9bc7-e582-4153-9eef-4b26ce6a1977.png)
+![](/image/1379525-20211130134505129-1674898283.gif)
