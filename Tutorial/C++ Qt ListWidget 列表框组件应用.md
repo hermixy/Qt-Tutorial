@@ -103,7 +103,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529658-e2d2ec2c-5631-4288-8849-8f9c78136c7b.png)
+![](/image/1379525-20211128105235460-1430598111.gif)
 
 上方代码中我们多数都是在使用`View`视图组件，接下来将具体分析`Widget`组件的使用细节，View组件与Widget组件看似一致，但却存在本质区别，其大致区别如下:
 
@@ -147,7 +147,7 @@ void MainWindow::on_pushButton_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529676-f3e325eb-3d0e-406c-b91d-8d091f4dba94.png)
+![](/image/1379525-20211128122049562-669888720.gif)
 
 <br>
 
@@ -177,8 +177,7 @@ void MainWindow::on_listWidget_currentItemChanged(QListWidgetItem *current, QLis
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529385-a93d25b1-3dd8-402b-8805-28d42eac2197.png)
-
+![](/image/1379525-20211128122316772-880262099.gif)
 
 <br>
 
@@ -203,8 +202,7 @@ void MainWindow::on_pushButton_5_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529363-f2daf6a9-5455-4a61-b22b-f2ac584b2861.png)
-
+![](/image/1379525-20211128123207459-799420731.gif)
 
 <br>
 
@@ -238,8 +236,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529346-2272af7b-8708-49aa-8082-7a12e9a3482a.png)
-
+![](/image/1379525-20211128124017206-176623916.gif)
 
 <br>
 
@@ -265,8 +262,7 @@ void MainWindow::on_pushButton_4_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529334-9323a5bd-699c-4012-8c98-0d94efead495.png)
-
+![](/image/1379525-20211128124715687-608473686.gif)
 
 <br>
 
@@ -304,8 +300,7 @@ void MainWindow::on_pushButton_7_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529319-d6b380ae-6275-4d48-b5f0-e26e70b42425.png)
-
+![](/image/1379525-20211128130312079-800346086.gif)
 
 <br>
 
@@ -322,4 +317,4 @@ void MainWindow::on_pushButton_6_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529304-2624a457-7592-4a98-83fb-b6623df139dd.png)
+![](/image/1379525-20211128130606077-473181290.gif)
