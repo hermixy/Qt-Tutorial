@@ -2,7 +2,7 @@ Qt 数据库组件与TableView组件实现联动，以下案例中实现了，�
 
 首先在UI界面中绘制好需要的控件，左侧放一个`TableView`组件，右侧是一个`ListView`组件，底部放三个`LineEdit`组件，界面如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207161548479-880279341.png)
+![](/image/1379525-20211207161548479-880279341.png)
 
 我们还是需要创建两张表结构，表`Student`用于存储学生的基本信息，表`StudentTimetable`存储的是每个学生所需要学习的课程列表，执行后创建数据表。
 ```C
@@ -142,7 +142,7 @@ MainWindow::~MainWindow()
 
 此时这个程序运行后会得到表内数据:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207163030063-452460389.png)
+![](/image/1379525-20211207163030063-452460389.png)
 
 接着我们需要绑定`TableView`表格的`on_currentRowChanged()`事件，当用户点击`TableView`表格中的某个属性是则自动触发该函数，在此函数内我们完成对其他组件的填充.
  - 1.通过`currentIndex`方法获取到当前表所在行
@@ -205,7 +205,7 @@ void MainWindow::on_currentRowChanged(const QModelIndex &current, const QModelIn
 
 当绑定选中事件时,程序运行效果如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207163617597-850645388.gif)
+![](/image/1379525-20211207163617597-850645388.gif)
 
 针对底部按钮处理事件相对来说较为简单，其实现原理就是调用了`TableView`默认提供的一些函数而已，代码如下:
 ```C
@@ -249,4 +249,4 @@ void MainWindow::on_pushButton_4_clicked()
 
 最终运行效果如下所示:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207164007889-1493554657.gif)
+![](/image/1379525-20211207164007889-1493554657.gif)
