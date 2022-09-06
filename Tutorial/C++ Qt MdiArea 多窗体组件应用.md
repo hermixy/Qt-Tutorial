@@ -2,8 +2,7 @@ MDI多窗体组件，主要用于设计多文档界面应用程序，该组件�
 
 MDI窗体控件类似于画布，该控件只具备展示窗体的功能，无法实现生成窗体，所以我们需要在项目中手动增加自定义的`Dialog`对话框，并对该对话框进行一定的定制。
 
-![image](https://user-images.githubusercontent.com/52789403/188530059-e4548352-e08f-4330-9ab1-a23796245a24.png)
-
+![](/image/1379525-20211130165058378-1307514627.png)
 
 这个Dialog对话框我们只增加两个功能，一个`Dialog::currentFileName()`获取窗体标题，另一个`Dialog::SetData(QString data)`设置数据到编辑框，代码实现如下.
 ```C
@@ -43,13 +42,11 @@ void Dialog::SetData(QString data)
 
 接着我们开始绘制这个程序的主界面，在`toolBar`中增加相应的菜单栏，并在主窗体中放入`mdiArea`容器组件。
 
-![image](https://user-images.githubusercontent.com/52789403/188530091-c4e6c9b1-74a4-4c99-b3ee-0e7b30783bf9.png)
-
+![](/image/1379525-20211130165349020-1149624349.png)
 
 窗体中的顶部菜单栏，我们需要手动定义一下他们所具备的功能名称等。
 
-![image](https://user-images.githubusercontent.com/52789403/188530105-761a61e3-8bed-4661-ac1b-7d1c1455e694.png)
-
+![](/image/1379525-20211130165601329-1642794923.png)
 
 当程序启动后，程序调用`MainWindow`初始化这个窗体，初始化代码如下:
 ```C
@@ -85,8 +82,7 @@ MainWindow::~MainWindow()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530123-71b043e8-4a85-4f39-9a16-f5694fc35a2b.png)
-
+![](/image/1379525-20211130165838382-324118851.png)
 
 用户新建窗体执行`MainWindow::on_actionOpen_triggered()`事件，关闭窗体时则执行`MainWindow::on_actionClose_triggered()`事件。
 ```C
@@ -106,8 +102,7 @@ void MainWindow::on_actionClose_triggered()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530150-07847e20-8772-4a30-8774-a7640588d3d8.png)
-
+![](/image/1379525-20211130170025796-561211095.png)
 
 当用户点击MDI模式时，我们则执行以下代码，将所有已存在的窗体合并为一个类似于`TabWidget`的窗体组件。
 ```C
@@ -134,8 +129,7 @@ void MainWindow::on_actionMID_triggered(bool checked)
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530164-666fb24d-2f84-4f4c-a22a-d67a40ec4cee.png)
-
+![](/image/1379525-20211130170224139-810942908.png)
 
 窗体级联模式则是将窗体并排排列在一起，我们只需要调用`ui->mdiArea->cascadeSubWindows();`方法即可实现.
 ```C
@@ -148,8 +142,7 @@ void MainWindow::on_actionLine_triggered()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530182-b3741274-3a5b-439f-a815-efff16b2ae8a.png)
-
+![](/image/1379525-20211130170344784-1689265879.png)
 
 平铺模式同样使用`ui->mdiArea->tileSubWindows();`即可实现转换。
 ```C
@@ -162,8 +155,7 @@ void MainWindow::on_actionTile_triggered()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530200-cd98be35-f092-41fc-8716-0a2e704d615a.png)
-
+![](/image/1379525-20211130170438691-1528502356.png)
 
 最后一个功能是主窗体发送数据到子窗体，该功能的实现需要两个函数。
 
@@ -209,4 +201,4 @@ void MainWindow::on_actionSendMsg_triggered()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530213-4c627733-01c3-46c7-b283-88f9b654bdd4.png)
+![](/image/1379525-20211130170826708-92729111.gif)
