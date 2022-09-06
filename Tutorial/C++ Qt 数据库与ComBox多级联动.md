@@ -85,11 +85,11 @@ MainWindow::~MainWindow()
 
 代码运行后第一个ComBox会显示所有用户名:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207145813790-316401904.gif)
+![](/image/1379525-20211207145813790-316401904.gif)
 
 此时回到UI编辑界面，我们在第一个ComBox上转到槽函数`on_comboBox_activated(const QString &arg1)`上面。
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207150016357-721319935.png)
+![](/image/1379525-20211207150016357-721319935.png)
 
 当用户选择第一个`ComBox`选择框时，自动查询数据库中与该选择框对应的字段，并关联到第二个选择框内，代码如下:
 ```C
@@ -119,4 +119,4 @@ void MainWindow::on_comboBox_activated(const QString &arg1)
 
 最终关联效果如下，当选择用户是自动关联到所维护的主机列表上面:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207150316084-287479371.gif)
+![](/image/1379525-20211207150316084-287479371.gif)
