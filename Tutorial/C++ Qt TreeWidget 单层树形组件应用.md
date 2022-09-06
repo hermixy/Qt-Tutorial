@@ -57,8 +57,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),ui(new Ui::MainWin
 
 代码运行后，如下所示：
 
-![image](https://user-images.githubusercontent.com/52789403/188528966-75a9d4cb-208b-490f-8ba1-ff28ebf0784b.png)
-
+![](/image/1379525-20211126164634851-1859687141.png)
 
 2.使用`TreeWidget`组件，自己定义一个菜单，并将该菜单绑定到Tree组件内，具体实现代码如下。
 ```C
@@ -173,4 +172,4 @@ void MainWindow::on_treeWidget_customContextMenuRequested(const QPoint &pos)
 
 最终我们实现的效果如下所示。
 
-![image](https://user-images.githubusercontent.com/52789403/188528992-86c09835-b692-435d-b7ca-92cd4e2d0551.png)
+![](/image/1379525-20211126165614619-525263083.gif)
