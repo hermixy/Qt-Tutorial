@@ -2,7 +2,7 @@ SqlTableModel 组件可以将数据库中的特定字段动态显示在`TableVie
 
 首先绘制好UI界面,本次案例界面稍显复杂，左侧是一个`TableView`组件，其他地方均为`LineEdit`组件与`Button`组件。
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209103258170-1850862982.png)
+![](/image/1379525-20211209103258170-1850862982.png)
 
 先来生成数据库表记录，此处我们只需要增加一个`Student`学生表，并插入两条测试数据即可，运行以下代码完成数据创建。
 ```C
@@ -47,7 +47,7 @@ void MainWindow::InitSQL()
 
 数据库创建后表内记录如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209104227298-853484863.png)
+![](/image/1379525-20211209104227298-853484863.png)
 
 程序运行后我们将在`MainWindow::MainWindow(QWidget *parent)`构造函数内完成数据库表记录与`TableView`组件字段的对应关系绑定，将数据库绑定到`QDataWidgetMapper`对象上，绑定代码如下。
 ```C
@@ -109,7 +109,7 @@ MainWindow::~MainWindow()
 
 绑定成功后运行程序即可看到如下效果,数据库中的记录被映射到了组件内.
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209104508130-277623719.png)
+![](/image/1379525-20211209104508130-277623719.png)
 
 当用户点击`TableView`组件内的某一行记录时，则触发`MainWindow::on_currentRowChanged`函数。
 
@@ -134,7 +134,7 @@ void MainWindow::on_currentRowChanged(const QModelIndex &current, const QModelIn
 
 运行效果如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209110140286-641789757.gif)
+![](/image/1379525-20211209110140286-641789757.gif)
 
 增加插入与删除记录实现方法都是调用`TabModel`提供的默认函数，通过获取当前选中行号，并对该行号执行增删改查方法即可。
 ```C
@@ -192,7 +192,7 @@ void MainWindow::on_pushButton_reset_clicked()
 
 增删改查实现如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209110445100-978356720.gif)
+![](/image/1379525-20211209110445100-978356720.gif)
 
 针对与排序与过滤的实现方式如下，同样是调用了标准函数。
 ```C
@@ -225,7 +225,7 @@ void MainWindow::on_pushButton_default_clicked()
 
 过滤效果如下所示:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209111111901-192090476.gif)
+![](/image/1379525-20211209111111901-192090476.gif)
 
 批量修改某个字段，其实现原理是首先通过`i<tabModel->rowCount()`获取记录总行数，然后通过`aRec.setValue`设置指定字段数值，并最终`tabModel->submitAll()`提交到表格中。
 ```C
@@ -246,7 +246,7 @@ void MainWindow::on_pushButton_clicked()
 
 循环修改实现效果如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209111422876-1283825423.gif)
+![](/image/1379525-20211209111422876-1283825423.gif)
 
 上方代码中，如果需要修改或增加特定行或记录我们只需要点击相应的按钮，并在选中行直接编辑即可实现向数据库中插入数据，而有时我们不希望通过在原表上操作，而是通过新建窗体并在窗体中完成增删改，此时就需要使用Dialog窗体并配合原生SQL语句来实现对记录的操作了。
 
@@ -291,4 +291,4 @@ void MainWindow::on_pushButton_insert_clicked()
 
 Dialog增加效果如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211209125411334-60479430.gif)
+![](/image/1379525-20211209125411334-60479430.gif)
