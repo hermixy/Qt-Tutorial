@@ -34,8 +34,7 @@ MainWindow::~MainWindow()
 
 运行代码效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530826-ff03b35a-6759-42d1-b759-07b59044848d.png)
-
+![](/image/1379525-20211203133411677-79416055.png)
 
 QLabel组件除了可以增加提示信息以外，通过设置`setOpenExternalLinks`可以将这个组件设置为以链接形式出现，有利于我们增加网页跳转等功能。
 ```C
@@ -76,8 +75,7 @@ MainWindow::~MainWindow()
 
 运行代码效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530845-34c7540f-b0a1-4cd7-91ad-87f6ed7c265a.png)
-
+![](/image/1379525-20211203125721479-549575758.png)
 
 同理，只要是通用组件都可以被安置到底部菜单栏，如果我们需要增加进度条组件只需要这样写:
 ```C
@@ -119,8 +117,7 @@ void MainWindow::on_pushButton_clicked()
 
 运行代码效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530863-76741109-1391-4e8a-a4c0-cec9a659a3ed.png)
-
+![](/image/1379525-20211203132850078-2047417183.png)
 
 接着我们增加一个`tablewidget`并初始化参数，tableWidget组件存在一个`on_tableWidget_currentCellChanged`属性，该属性的作用是，只要Table表格存在变化则会触发，当用户选择不同的表格，我们可以将当前表格行列自动设置到状态栏中，从而实现同步状态栏消息提示，起到时刻动态显示的作用。
 ```C
@@ -204,4 +201,4 @@ MainWindow::~MainWindow()
 
 运行代码效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530883-4ffe824b-7a34-44bf-8f8d-0dcb7db1135c.png)
+![](/image/1379525-20211203131938209-282394017.gif)
