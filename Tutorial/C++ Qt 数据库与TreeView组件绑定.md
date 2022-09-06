@@ -50,7 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),ui(new Ui::MainWind
 
 执行建库建表后,数据库内记录如下:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207104211264-685453126.png)
+![](/image/1379525-20211207104211264-685453126.png)
 
 有了数据表以后，接着就需要将数据表中的记录与View组件进行绑定，绑定组件首先需要调用`QSqlQueryModel`查询数据表中的记录，当查询到记录以后，调用`QItemSelectionModel()`将该记录绑定到对应的模型中，最后调用`ui->treeView->setModel(qryModel);`以及`ui->treeView->setSelectionModel(theSelection);`将该模型显示在`TreeView`组件内，这段代码如下:
 ```C
@@ -118,4 +118,4 @@ MainWindow::~MainWindow()
 
 运行代码后,程序会从数据库内取出结果并输出到`TreeView`组件上:
 
-![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211207104540340-1274053622.png)
+![](/image/1379525-20211207104540340-1274053622.png)
