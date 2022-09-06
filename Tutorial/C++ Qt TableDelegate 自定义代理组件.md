@@ -14,8 +14,7 @@ TableDelegate 自定义代理组件的主要作用是对原有表格进行调整
 先来实现一个代理，代理到`Spin`组件上，首先需要在项目上右键
  - 选择addnew -> C++Class 输入自定义类名称`QWintSpinDelegate`，然后基类继承`QStyledItemDelegate/QMainWindow`，然后下一步结束向导。
 
-![image](https://user-images.githubusercontent.com/52789403/188530488-63602469-70fb-45dc-9a4d-7700fffdd0d7.png)
-
+![](https://img2020.cnblogs.com/blog/1379525/202112/1379525-20211203141715362-1279837663.png)
 
 重写接口`spindelegate.cpp`代码如下.
 ```C
@@ -215,4 +214,4 @@ MainWindow::~MainWindow()
 
 代理部件关联后，再次运行程序，会发现原来的`TableWidget`组件中的编辑框已经替换为了选择框等组件:
 
-![image](https://user-images.githubusercontent.com/52789403/188530530-3dad7efb-57c7-4321-8802-a438d8615549.png)
+![](/image/1379525-20211201142450302-1262041489.gif)
