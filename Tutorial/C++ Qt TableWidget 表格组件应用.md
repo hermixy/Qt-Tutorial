@@ -54,8 +54,7 @@ void MainWindow::on_pushButton_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530377-c34a9007-6784-49e1-8f8a-3bbdb427e1f5.png)
-
+![](/image/1379525-20211201104708748-1997946788.gif)
 
 Widget组件的初始化与View组件基本保持一致，当程序运行时，首先在构造函数中执行以下代码，对表格进行初始化。
 ```C
@@ -107,8 +106,7 @@ MainWindow::~MainWindow()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530404-81ec1e9c-ae3a-4646-8f72-84927a656f90.png)
-
+![](/image/1379525-20211201105737473-1656135356.png)
 
 接着就是对Ui中的按钮增加一些绑定事件，此处我们就通过`connect`绑定信号，绑定以下这几个:
  - ui->pushButton 绑定添加信号
@@ -205,4 +203,4 @@ MainWindow::~MainWindow()
 
 信号绑定后,代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530420-1838a505-b78d-46ec-ab1d-465b9a7a6c25.png)
+![](/image/1379525-20211201111120822-456709498.gif)
