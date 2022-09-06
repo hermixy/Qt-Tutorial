@@ -2,8 +2,7 @@
 
 首先先来实现一个只有`TabWidget`分页的简单结构，如下窗体布局，布局中空白部分是一个`TabWidget`组件，下方是一个按钮，当用户点击按钮时，自动将该窗体新增到`TabWidget`组件中。
 
-![image](https://user-images.githubusercontent.com/52789403/188530695-70f1a654-335d-4da4-afd4-33020ebdb19f.png)
-
+![](/image/1379525-20211203094410142-857711261.png)
 
 该页面关联代码如下所示，当用户点击`on_pushButton_clicked()`时自动新增一个窗体并将窗体的`Tab`设置为指定的IP地址。
 ```C
@@ -95,9 +94,8 @@ FormDoc::~FormDoc()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188530724-326d96e0-7661-46f1-9009-bbeb6531d30b.png)
-
+![](/image/1379525-20211203094838231-345492398.gif)
 
 Tab组件如果配合ToolBar组件可以实现更多有意思的功能，例如下面这个案例:
 
-![image](https://user-images.githubusercontent.com/52789403/188530738-c55b67fe-9701-4145-b611-bfc3f4ec782c.png)
+![](/image/1379525-20211203100017823-1506760123.gif)
