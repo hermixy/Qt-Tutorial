@@ -8,17 +8,15 @@
 
  - 选择项目 -> AddNew -> QT -> Qt设计师界面类 -> 选择空白Dialog -> 命名为Dialog保存
 
-![image](https://user-images.githubusercontent.com/52789403/188528882-6d8b9528-0bfb-4a6e-aaf0-16a2fa8785cd.png)
+![](/image/1379525-20211125162123979-1287081757.png)
 
 直接选中`Dianlog.ui`并绘制界面为以下，一个编辑框，两个按钮。
 
-![image](https://user-images.githubusercontent.com/52789403/188528869-bfa1458c-9b6e-4657-9f9f-56c07e6c625d.png)
-
+![](/image/1379525-20211125162447420-1604947219.png)
 
 其次需要在`Dialog`对话框上增加`两个信号`，分别是`点击`和`关闭`，并将信号关联到两个槽函数上，其信号应该写成如下样子。
 
-![image](https://user-images.githubusercontent.com/52789403/188528856-86f81b8c-5c8f-40da-bbfb-dc57369c863a.png)
-
+![](/image/1379525-20211125162528677-1496994988.png)
 
 接着我们点开`dialog.cpp`这个类则是对话框类，类内需要定义两个成员函数，它们的功能如下：
  - 第一个 `GetValue()` 用来获取当前编辑框内的数据并将数据返回给父窗体。
@@ -111,7 +109,7 @@ void MainWindow::on_pushButton_clicked()
 
 具体演示代码如下所示:
 
-![image](https://user-images.githubusercontent.com/52789403/188528837-267e6e2f-283f-4622-85a0-32dbda663bc3.png)
+![](/image/1379525-20211125164225983-1615458964.gif)
 
 <br>
 
@@ -244,9 +242,8 @@ void MainWindow::on_pushButton_clicked()
 ```
 代码运行后与基于函数版的基本一致，但在灵活性上来说信号版更好一些。
 
-![image](https://user-images.githubusercontent.com/52789403/188528807-5b8aac46-5b78-4280-9167-fe97830bfb69.png)
+![](/image/1379525-20211125165731172-1586209119.gif)
 
 自定义对话框基本就这些内容，灵活运行这些组件，很容易就能实现一些有用的表格编辑器。
 
-![image](https://user-images.githubusercontent.com/52789403/188528792-5a6e0d73-c957-43e9-bd43-243f48b8ca4b.png)
-
+![](/image/1379525-20211126100031481-527949606.gif)
