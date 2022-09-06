@@ -2,22 +2,21 @@
 
 如果我们使用选择夹组件，必须提前拖入UI界面中(无法代码生成)，如下我们找到`TabWidget`并将其拖入UI界面中。
 
-![image](https://user-images.githubusercontent.com/52789403/188528601-b38c9f42-75b2-42cc-89e2-a97328ca78d4.png)
+![](/image/1379525-20211123133203300-1131260999.png)
 
 其次需要增加与美化代码对应的子夹数量，这里我们分别增加三个子夹，此处只需要增加不需要重命名。
 
-![image](https://user-images.githubusercontent.com/52789403/188528578-9fe84be4-c214-4b49-92e9-2bd43f4a4dba.png)
+![](/image/1379525-20211123133358819-2092609339.png)
 
 接着我们需要增加三个子夹对应的图标组，插入图标组需要执行以下步骤。
 
  - 选择Forms -> 右键(AddNew) -> Qt -> Qt Resource File -> 命名为 res
 
-![image](https://user-images.githubusercontent.com/52789403/188528558-7a924930-6e81-4a20-859d-d8aa24f0d258.png)
+![](/image/1379525-20211123133709555-2048904733.png)
 
  - 添加前缀/ -> 添加文件 -> 导入所有ICO文件.
 
-![image](https://user-images.githubusercontent.com/52789403/188528538-c78cef23-8f57-4705-8e7f-1778a5b763b3.png)
-
+![](/image/1379525-20211123133822044-1400647896.png)
 
 通过上方的配置后，我们的资源就会被编译为二进制文件，此时通过代码中使用`QIcon(":/image/1.ico")`相对路径即可引入到项目中。
 
@@ -61,5 +60,4 @@ MainWindow::~MainWindow()
 
 我们直接在代码中初始化这些选择夹即可实现增加图标以及字体等功能，运行后代码如下所示。
 
-![image](https://user-images.githubusercontent.com/52789403/188528521-72987a85-a695-4e67-956d-d8b03817f359.png)
-
+![](/image/1379525-20211123133858076-1494608574.png)
