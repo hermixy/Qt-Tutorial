@@ -2,7 +2,7 @@ StringListModel 字符串列表映射组件，该组件用于处理字符串与�
 
 首先在UI界面中排版
 
-![image](https://user-images.githubusercontent.com/52789403/188531070-6f8b5d81-36b0-4ce9-b654-1f10aec0134c.png)
+![](/image/1379525-20211203151248967-277387739.png)
 
 默认的`MainWindow::MainWindow`构造函数中，我们首先初始化一个`QStringList`字符串链表并对该链表赋值，通过`new QStringListModel(this);`创建一个数据模型，并通过`ui->listView->setModel(model);`属性将模型与ListView组件绑定，当ListView组件被选中是则触发`on_listView_clicked`事件实现输出当前选中行，其初始化代码部分如下:
 ```C
@@ -43,8 +43,7 @@ void MainWindow::on_listView_clicked(const QModelIndex &index)
 
 代码运行效果:
 
-![image](https://user-images.githubusercontent.com/52789403/188531052-af0e9308-f168-492a-bc2a-1fdd20c7c4ab.png)
-
+![](/image/1379525-20211203152429712-1154719641.gif)
 
 添加代码：需要通过`model->index()`获取到最后一行的索引，然后使用`model->setData()`追加写入数据到最后一条索引位置。
 插入代码: 需要通过`ui->listView->currentIndex()`获取到当前光标位置，并调用`model->setData()`插入到指定位置。
@@ -91,8 +90,7 @@ void MainWindow::on_btnListClear_clicked()
 
 代码运行效果:
 
-![image](https://user-images.githubusercontent.com/52789403/188531025-122a211f-d45d-42c9-b7dc-6a0c227aa379.png)
-
+![](/image/1379525-20211203153530644-16397678.gif)
 
 如果需要实现将`ListView`数据模型中的数据导出到`plaintextEdit`组件中，则需要通过`model->stringList()`获取到ListView中的每行并将其赋值到`QStringList`字符串链表中，最后通过循环的方式依次插入到`plainTextEdit`中即可，插入时默认会以逗号作为分隔符。
 ```C
@@ -114,4 +112,4 @@ void MainWindow::on_btnTextImport_clicked()
 
 代码运行效果:
 
-![image](https://user-images.githubusercontent.com/52789403/188530995-0c228367-2fda-4de6-b952-a709e5c566da.png)
+![](/image/1379525-20211203155017784-2060059043.gif)
