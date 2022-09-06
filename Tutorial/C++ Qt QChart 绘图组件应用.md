@@ -2,11 +2,11 @@ QtCharts 组件是QT中提供图表绘制的模块，该模块可以方便的绘
 
 在使用绘图模块时需要在pro文件中包含`QT += charts`来引入绘图类库。
 
-![image](https://user-images.githubusercontent.com/52789403/188527954-8705f3e3-2dc8-4d13-b6dc-163cddf965a2.png)
+![](/image/1379525-20211119143048200-1663845826.png)
 
 然后还需在头文件中定义`QT_CHARTS_USE_NAMESPACE`宏，这样才可以正常的使用绘图功能。
 
-![image](https://user-images.githubusercontent.com/52789403/188527941-3aab00b0-a5cb-4bdf-bc53-e654645be52f.png)
+![](/image/1379525-20211119143121462-1243071534.png)
 
 一般情况下我们会在`mainwindows.h`头文件中增加如下代码段。
 ```C
@@ -21,15 +21,15 @@ QT_CHARTS_USE_NAMESPACE
 ```
 由于QT中不存在单独的绘图画布，因此在绘图前我们需要在窗体中放入一个`graphicsView`组件。
 
-![image](https://user-images.githubusercontent.com/52789403/188527925-36e9975c-1ef3-4a0b-9381-f90342cf07b2.png)
+![](/image/1379525-20211119143152756-259992224.png)
 
 并在该组件上右键将其提升为`QChartView`
 
-![image](https://user-images.githubusercontent.com/52789403/188527907-930fc836-c61f-487c-a189-b7137aa5d336.png)
+![](/image/1379525-20211119143329404-1120423394.png)
 
 输入需要提升的组件名称，即可将该组件提升为全局绘图组件。
 
-![image](https://user-images.githubusercontent.com/52789403/188527895-a8bfaecb-b4c3-47a2-afbe-f9e4ccbcbad4.png)
+![](/image/1379525-20211119143709118-392120401.png)
 
 <br>
 
@@ -172,7 +172,7 @@ void MainWindow::on_LegendMarkerClicked()
 
 效果如下所示：
 
-![image](https://user-images.githubusercontent.com/52789403/188527865-33de4e5e-419a-4140-a4a2-234b6c23faa7.png)
+![](/image/1379525-20211119143958962-1329280004.png)
 
 <br>
 
@@ -255,7 +255,7 @@ MainWindow::~MainWindow()
 
 效果如下所示：
 
-![image](https://user-images.githubusercontent.com/52789403/188527846-6173362e-5baa-47ca-9d66-18c2fb1aceea.png)
+![](/image/1379525-20211119144552766-1237700524.png)
 
 <br>
 
@@ -322,4 +322,4 @@ MainWindow::~MainWindow()
 
 效果如下所示：
 
-![image](https://user-images.githubusercontent.com/52789403/188527831-a4048a01-5e03-4358-8960-38f8fbb6eac6.png)
+![](/image/1379525-20211119144736751-1626463244.png)
