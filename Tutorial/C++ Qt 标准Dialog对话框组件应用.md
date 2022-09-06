@@ -57,8 +57,7 @@ void MainWindow::on_pushButton_2_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528716-98a9d735-3038-4f23-8470-606223c5e366.png)
-
+![](/image/1379525-20211124112707969-1779098355.png)
 
 **QMessageBox 退出事件:** 弹窗组件还可以配合QCloseEvent实现事件通知机制，例如当窗体被关闭则提示用户是否关闭窗体。
 ```C
@@ -94,8 +93,7 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528700-7d06556a-e175-4ebf-9d02-5f1778c5fe1c.png)
-
+![](/image/1379525-20211124112817880-570043401.png)
 
 **QInputDialog 对话框:** 该对话框长用于输入一段特殊的文本,浮点数,或者选择一个列表框中的选项，该功能用于简单的用户交互场景。
 ```C
@@ -190,8 +188,7 @@ void MainWindow::on_pushButton_4_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528683-b9ada131-a21a-4557-919f-10a51af15919.png)
-
+![](/image/1379525-20211124112928956-1506959557.png)
 
 **QFileDialog 对话框:** 该对话框用于对文本的操作，例如打开文件，保存文件，选择文件夹等，当点击选择后，对话框会自动提取出文件路径。
 ```C
@@ -273,4 +270,4 @@ void MainWindow::on_pushButton_4_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528667-544db447-da7e-4555-8ca4-d4acdd03638a.png)
+![](/image/1379525-20211124112956546-724276810.png)
