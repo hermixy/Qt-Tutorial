@@ -75,8 +75,7 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528243-295c361b-847e-4f27-a4d7-fdf388219385.png)
-
+![](/image/1379525-20211122201559616-1267936846.png)
 
 <br>
 
@@ -153,8 +152,7 @@ void MainWindow::on_pushButton_2_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528233-768a2d71-b7aa-41b2-a4a1-a82e74739749.png)
-
+![](/image/1379525-20211122203359117-330296642.png)
 
 如上我们学习总结了按钮组件与编辑框组件的使用，这两个组件组合起来可实现一个简单地页面登录验证界面，代码如下:
 ```CPP
@@ -256,8 +254,7 @@ void MainWindow::on_pushButton_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528214-33febd9c-b3d3-4f46-aa27-500f7f49cf52.png)
-
+![](/image/1379525-20211122203654519-1319050419.png)
 
 <br>
 
@@ -299,8 +296,7 @@ void MainWindow::on_pushButton_3_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528196-0aa49421-ae8f-4ad8-88f9-139630e7e7a6.png)
-
+![](/image/1379525-20211122205754638-1785234368.png)
 
 我们继续在SpinBox的基础上改进，如上代码中每次都需要点击计算按钮才能出结果，此时我们需求是实现当`SpinBox`中的参数发生变化时自定的完成计算，这里就需要用到信号和槽了，当SpinBox被修改后，自动触发计算信号实现计算。
 ```CPP
@@ -344,8 +340,7 @@ void MainWindow::on_pushButton_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528182-ed3f9c6f-0834-4f16-8381-a149aa99d777.png)
-
+![](/image/1379525-20211122205835558-327074342.png)
 
 <br>
 
@@ -395,8 +390,7 @@ void MainWindow::on_SliderRed_valueChanged(int value)
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528158-9838ec91-0118-44c5-ba7d-9dd9d7d50866.png)
-
+![](/image/1379525-20211122210628691-1498096615.png)
 
 <br>
 
@@ -462,8 +456,7 @@ void MainWindow::on_radioBtnHex_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528144-37ccd5ca-ca68-493d-9eee-66f01b8eb409.png)
-
+![](/image/1379525-20211122211358335-54790051.png)
 
 <br>
 
@@ -534,8 +527,7 @@ void MainWindow::on_checkBox_master_stateChanged(int state)
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528114-ffe2cce5-23aa-480d-acd7-f04c18404ab0.png)
-
+![](/image/1379525-20211122211458297-336263192.png)
 
 <br>
 
@@ -639,8 +631,7 @@ void MainWindow::on_comboBox_main_currentTextChanged(const QString &arg1)
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528098-405fbd44-58ac-477a-92ed-fe852b3342ab.png)
-
+![](/image/1379525-20211122212158914-665067253.png)
 
 <br>
 
@@ -716,8 +707,7 @@ void MainWindow::on_pushButton_3_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528085-a0758535-43d5-4e48-a8ed-44ad56261f88.png)
-
+![](/image/1379525-20211122212400182-81594932.png)
 
 <br>
 
@@ -768,7 +758,7 @@ void MainWindow::on_pushButton_2_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528067-11c06905-ab12-4083-96c7-efd98c3b97bd.png)
+![](/image/1379525-20211122212537132-1384048214.png)
 
 <br>
 
@@ -827,8 +817,7 @@ void MainWindow::on_pushButton_clicked()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528052-88a5b371-0e2e-4388-b3e4-d13b2b424ea7.png)
-
+![](/image/1379525-20211122212725089-1084703589.png)
 
 <br>
 
@@ -891,4 +880,4 @@ void MainWindow::MySlots()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528034-b84eb69c-c0eb-4ab9-8a51-52de93e51d03.png)
+![](/image/1379525-20211122212812977-917463213.png)
