@@ -80,7 +80,7 @@ MainWindow::~MainWindow()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529221-9ac8765b-b7f3-4479-8a8b-7b4c603e9364.png)
+![](/image/1379525-20211127145331942-2034147543.png)
 
 <br>
 
@@ -166,8 +166,7 @@ MainWindow::~MainWindow()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529206-20541a8a-aba5-4813-b4e4-aaf4b8874bfc.png)
-
+![](/image/1379525-20211127152025254-1640865007.png)
 
 <br>
 
@@ -192,8 +191,7 @@ void MainWindow::on_treeWidget_itemClicked(QTreeWidgetItem *item, int column)
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529182-239703c9-8811-4150-b8bf-62a74bc41aae.png)
-
+![](/image/1379525-20211127152714916-999017813.gif)
 
 <br>
 
@@ -222,8 +220,7 @@ void MainWindow::on_pushButton_4_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529163-ee190349-4832-4ab3-8ec1-250f16899690.png)
-
+![](/image/1379525-20211127154351973-1197216214.gif)
 
 <br>
 
@@ -252,8 +249,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529139-2ab906d4-39fe-49b4-ba58-99c4d6bcc09c.png)
-
+![](/image/1379525-20211127154445606-2050818273.gif)
 
 <br>
 
@@ -279,8 +275,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529127-a1f3a41b-17a5-433e-a4f3-a06ef6d6a9ad.png)
-
+![](/image/1379525-20211127154522103-795727827.gif)
 
 <br>
 
@@ -319,8 +314,7 @@ void MainWindow::on_pushButton_5_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529113-3d1ac647-59bf-4c03-8f2e-f7fd143050d2.png)
-
+![](/image/1379525-20211127154944381-1774109395.gif)
 
 <br>
 
@@ -360,7 +354,7 @@ void MainWindow::on_pushButton_7_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529087-b57ba503-612c-4e24-b084-11eaab24529d.png)
+![](/image/1379525-20211127155349421-2083367768.gif)
 
 <br>
 
@@ -387,7 +381,7 @@ void MainWindow::on_pushButton_6_clicked()
 
 代码运行效果如下:
 
-![image](https://user-images.githubusercontent.com/52789403/188529065-bf723752-746e-487f-91c3-a0b9b622a30d.png)
+![](/image/1379525-20211127155556020-1854982478.gif)
 
 补充一下节点插入函数的定义,`AddTreeRoot/AddTreeNode`两个函数定义如下所示.
 ```C
