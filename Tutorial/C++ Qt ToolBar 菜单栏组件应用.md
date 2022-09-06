@@ -1,6 +1,6 @@
 ToolBar工具栏在所有窗体应用程序中都广泛被使用，使用ToolBar可以很好的规范菜单功能分类，用户可根据菜单栏来选择不同的功能，Qt中默认自带ToolBar组件，当我们以默认方式创建窗体时，ToolBar就被加入到了窗体中，一般是以QToolBar的方式存在于对象菜单栏，如下所示。
 
-![image](https://user-images.githubusercontent.com/52789403/188528456-8b82fc68-88ed-4c85-ac8a-bf9851135b23.png)
+![](/image/1379525-20211123162155457-684790898.png)
 
 QToolBar组件在开发中我遇到了以下这些功能，基本上可以应对大部分开发需求了，这里就做一个总结。
 
@@ -68,7 +68,7 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528436-c988aec8-548e-4b86-a89e-c46c223c2668.png)
+![](/image/1379525-20211123162701955-876770829.png)
 
 接着通过代码的方式实现一个顶部菜单栏，该菜单栏中可以通过`SetIcon(QIcon("://image/1.ico"));`指定图标，也可以使用`setShortcut(Qt::CTRL | Qt::Key_C);`为其指定特殊的快捷键。
 ```CPP
@@ -132,8 +132,7 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528402-307ad5e0-977d-44ee-ac5c-12d94540ee1b.png)
-
+![](/image/1379525-20211123162912447-1806738622.png)
 
 实现顶部菜单栏二级菜单，二级顶部菜单与一级菜单完全一致，只是在一级菜单的基础上进行了延申，如下代码则是定义了一个二级菜单。
 ```CPP
@@ -213,7 +212,7 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528387-72395a9d-53e7-4179-a026-a1e7ce253a91.png)
+![](/image/1379525-20211123163036020-1619685112.png)
 
 Qt中的菜单还可以实现任意位置的弹出，例如我们可以将右击`customContextMenuRequested()`事件，绑定到主窗口中，实现在窗体任意位置右击都可以弹出菜单栏，代码如下。
 ```CPP
@@ -301,7 +300,7 @@ void MainWindow::onTaskBoxContextMenuEvent()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528358-e7cf9207-df13-4540-bab2-a22123e0fda9.png)
+![](/image/1379525-20211123163147099-1483775435.png)
 
 还可以将顶部的菜单通过`bar->setVisible(false);`属性将其隐藏起来，对外只展示出一个ToolBar控件栏位，ToolBar控件栏中只保留ICO图标与底部文字描述，这样能显得更加清爽一些。
 ```CPP
@@ -373,5 +372,4 @@ MainWindow::~MainWindow()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52789403/188528342-d4893665-b213-46a2-ae8e-fbd6043b3bf0.png)
-
+![](/image/1379525-20211123163230113-30013783.png)
